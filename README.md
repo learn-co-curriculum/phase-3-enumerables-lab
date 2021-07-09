@@ -43,7 +43,7 @@ spiciest_foods(spicy_foods)
 ```
 
 `print_spicy_foods(spicy_foods)`: Given an array of spicy foods, **output to the
-terminal** each spicy food in the following format:
+terminal** each spicy food in the following format using `puts`:
 `Buffalo Wings (American) | Heat Level: 🌶🌶🌶`.
 
 HINT: you can use [times (\*) with a string][string times] to produce the
