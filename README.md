@@ -1,4 +1,4 @@
-# Enumerables: Common Methods Lab
+# Enumerables Lab
 
 ## Learning Goals
 
