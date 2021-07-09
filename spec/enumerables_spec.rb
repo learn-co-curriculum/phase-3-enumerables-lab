@@ -48,7 +48,7 @@ describe 'enumerables' do
         { name: 'Mapo Tofu', cuisine: 'Sichuan', heat_level: 6 },
         { name: 'Green Curry', cuisine: 'Thai', heat_level: 9 }
       ]
-      expect(sort_by_heat(spicy_foods)).to be(sorted_array)
+      expect(sort_by_heat(spicy_foods)).to eq(sorted_array)
     end
 
   end
