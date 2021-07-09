@@ -40,6 +40,19 @@ describe 'enumerables' do
 
   end
 
+  describe 'sort_by_heat' do
+    
+    it 'return an array of hashes sorted by heat level from lowest to highest' do
+      sorted_array = [
+        { name: 'Buffalo Wings', cuisine: 'American', heat_level: 3 },
+        { name: 'Mapo Tofu', cuisine: 'Sichuan', heat_level: 6 },
+        { name: 'Green Curry', cuisine: 'Thai', heat_level: 9 }
+      ]
+      expect(sort_by_heat(spicy_foods)).to be(sorted_array)
+    end
+
+  end
+
   describe 'print_spiciest_foods' do
     
     it 'outputs ONLY the spicy foods that have a heat level greater than 5 to the terminal in the specified format' do
