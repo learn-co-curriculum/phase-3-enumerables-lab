@@ -13,19 +13,15 @@ end
 # with the names of each spicy food
 def get_names(spicy_foods)
   names = []
-  spicy_foods.each do |food|
-    names << food[:name]
-  end
+  spicy_foods.each { |food| names << food[:name] }
   names
 end
 
 # given an array of spicy foods, **return an array of hashes** 
 # where the heat level of the food is greater than 5
 def spiciest_foods(spicy_foods)
-  binding.pry
+  spicy_foods.filter { |food| food[:heat_level] > 5 }
 end
-
-spiciest_foods(spicy_foods)
 
 # given an array of spicy foods, **output to the terminal**
 # each spicy food in the following format: 
