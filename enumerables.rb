@@ -37,13 +37,16 @@ end
 # given an array of spicy foods and a string representing a cuisine, **return a single hash**  
 # for the spicy food whose cuisine matches the cuisine being passed to the method
 def get_spicy_food_by_cuisine(spicy_foods, cuisine)
-  # your code here
+  spicy_foods.find do |food| 
+    food[:cuisine] == cuisine
+  end   
 end
 
 # Given an array of spicy foods, **return an array of hashes** 
 # sorted by heat level from lowest to highest
 def sort_by_heat(spicy_foods)
-  # your code here
+  spicy_foods.sort_by { |food| food[:heat_level] }
+  
 end
 
 # given an array of spicy foods, output to the terminal ONLY 
