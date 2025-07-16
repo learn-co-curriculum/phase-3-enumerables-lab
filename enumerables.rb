@@ -54,10 +54,9 @@ end
 def print_spiciest_foods(spicy_foods)
   spicy_foods.filter do |food| 
     if food[:heat_level] > 5 
-    food[:heat_level] =  "#{"🌶" * food[:heat_level]}"
+    puts "#{food[:name]} (#{food[:cuisine]}) | Heat Level: #{"🌶" * food[:heat_level]}"
     end
-    puts "#{food[:name]} (#{food[:cuisine]}) | Heat Level: #{food[:heat_level]}"
-    end
+  end
 end
 
 # given an array of spicy foods, return an integer representing 
